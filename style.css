@@ -12,33 +12,41 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(Banner.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   padding: 50px;
+  /* background:  */
+  background: linear-gradient(to right top, #48f1c1, turquoise);
 }
 
 /*white text box*/
 .textBx {
   position: relative;
   width: calc(100% - 100px);
-  min-height: calc(100vh - 280px);
-  min-height: 300px;
-  background: rgba(255, 255, 255, 0.4);
+  /* min-height: calc(100vh - 280px); */
+  /* min-height: 300px; */
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 3;
 }
 
 /* navigation bar box*/
 nav {
   position: absolute;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   top: -100px;
   /* width: calc(100%- 100px); */
   right: 0;
@@ -47,12 +55,18 @@ nav {
   padding: 5px 100px;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
   height: 70px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(0.8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* navigation list items horizontally */
-nav .nav-items ul {
+nav ul {
   display: flex;
   flex: 1;
   list-style: none;
@@ -60,17 +74,76 @@ nav .nav-items ul {
 }
 
 /* navigation items space in between */
-nav .nav-items li {
+nav ul li {
   padding: 0 15px;
+  list-style: none;
+  margin: 0 10px;
 }
 /* navigation items list and links */
-nav .nav-items li a {
-  color: black;
-  font-size: 18px;
+nav ul li a {
+  color: antiquewhite;
+  font-size: 20px;
   font-weight: 500;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+/* turns white when hover over */
+nav ul li a:hover {
+  color: pink;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  /* transform: translateX(-100px); */
+  /* max-width: 10px; */
+  align-self: center;
+}
+.content h2 {
+  font-size: 3em;
+  color: antiquewhite;
+}
+
+.content h3 {
+  font-size: 1.2em;
+  color: antiquewhite;
+  align-self: center;
+}
+
+.content a {
+  display: inline;
+  padding: 15px 30px;
+  /* background: antiquewhite; */
+  color: antiquewhite;
+  margin-top: 20px;
+  /* border-radius: 30px; */
+  font-size: 1.2em;
   text-decoration: none;
 }
 
-nav .nav-items li a:hover {
-  color: pink;
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+}
+
+.circle1 {
+  top: 20%;
+  right: 1%;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.circle2 {
+  bottom: -30%;
+  left: 10%;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
