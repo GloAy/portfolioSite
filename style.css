@@ -17,7 +17,7 @@ section {
   background-position: center;
   padding: 50px;
   /* background: #f7dbd7; */
-  background: linear-gradient(to right top, #f7dbd7, #9cc0e7);
+  background: linear-gradient(to right top, #cc1100, #f7dbd7);
 }
 
 /*white text box*/
@@ -31,7 +31,7 @@ section {
   box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 50px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -39,7 +39,7 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 /* navigation bar box*/
@@ -82,7 +82,7 @@ nav ul li {
 /* navigation items list and links */
 nav ul li a {
   /* color: antiquewhite; */
-  color: #8b1e3f;
+  color: black;
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
@@ -100,16 +100,16 @@ nav ul li a:hover {
   /* max-width: 10px; */
   align-self: center;
 }
-.content h2 {
+.content h1 {
   font-size: 3em;
   /* color: antiquewhite; */
-  color: #8b1e3f;
+  color: black;
 }
 
-.content h3 {
+.content h2 {
   font-size: 1.2em;
   /* color: antiquewhite; */
-  color: #8b1e3f;
+  color: black;
 }
 
 .content a {
@@ -117,8 +117,7 @@ nav ul li a:hover {
   padding: 15px 30px;
   /* background: antiquewhite; */
   /* color: antiquewhite; */
-  color: #8b1e3f;
-
+  color: black;
   margin-top: 20px;
   /* border-radius: 30px; */
   font-size: 1.2em;
@@ -146,10 +145,10 @@ nav ul li a:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 } */
 
-.circle2 {
+/* .circle2 {
   bottom: -30%;
   left: 10%;
   border-radius: 50%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
-}
+} */
